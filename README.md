@@ -50,8 +50,11 @@ CS50x/
 └── CS50x-Certificate.png
 
 ````
-[![Final Project](https://img.shields.io/badge/Final_Project-MyLibrary-blue)](https://your-project-link.com)
+## 🚀 Final Project
 
+[**Reddit Sentiment Analysis**](https://github.com/shashank3115/CS50x/tree/main/Final%20project)
+
+---
 
 
 Each folder contains:
@@ -107,7 +110,8 @@ This README is **structured like the one you shared**:
 - Contact info  
 
 ---
-<img width="919" height="458" alt="image" src="https://github.com/user-attachments/assets/f56ad52b-0798-40fe-962a-23c0f0489924" />
+<img width="1400" height="744" alt="image" src="https://github.com/user-attachments/assets/8d37cb70-58bd-4086-86b6-31601a9bfc02" />
+
 
 
 
