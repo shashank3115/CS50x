@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Sentiment Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+    <link href="/static/favicon.ico" rel="icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Reddit Sentiment Analysis</h1>
+
+        <!-- DARK MODE TOGGLE -->
+        <div class="text-end mb-3">
+            <button id="darkModeToggle" class="btn btn-secondary btn-sm">Toggle Dark Mode</button>
+        </div>
+
+        <!-- ANALYSIS FORM -->
+        <form id="analyze-form">
+            <div class="form-group mb-2">
+                <label for="subreddit">Subreddit:</label>
+                <input type="text" name="subreddit" id="subreddit" class="form-control" placeholder="e.g. India" required>
+            </div>
+            <div class="form-group mb-2">
+                <label for="keyword">Keyword (optional for highlight):</label>
+                <input type="text" name="keyword" id="keyword" class="form-control" placeholder="e.g. stock, cricket">
+            </div>
+            <div class="form-group mb-3">
+                <label for="limit">Number of Posts:</label>
+                <input type="number" name="limit" id="limit" class="form-control" min="10" max="50" value="20">
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+
+        <!-- LOADING SPINNER -->
+        <div id="loading" style="display: none; text-align:center; margin:20px;">
+            <p>Loading posts...</p>
+        </div>
+
+        <!-- RESULTS -->
+        <div id="results" style="display: none; margin-top:20px;">
+
+            <!-- SENTIMENT CHART -->
+            <h3>Sentiment Summary</h3>
+            <canvas id="sentimentChart" height="100"></canvas>
+            <button id="downloadChart" class="btn btn-secondary btn-sm mt-2">Download Sentiment Chart</button>
+
+            <!-- WORD CLOUD -->
+            <h3>Word Cloud (Top Words)</h3>
+            <canvas id="wordCloudCanvas" width="600" height="400"></canvas>
+            <button id="downloadWordCloud" class="btn btn-secondary btn-sm mt-2">Download Word Cloud</button>
+
+            <!-- TOP POSTS -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Top Positive Posts</h4>
+                    <ul id="positivePosts" class="list-group scrollable-list"></ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Top Negative Posts</h4>
+                    <ul id="negativePosts" class="list-group scrollable-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

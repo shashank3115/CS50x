@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Edit Birthday</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Birthday</h2>
+        <form action="/edit/{{ birthday.id }}" method="post">
+            <input name="name" type="text" value="{{ birthday.name }}" required>
+            <input name="month" type="number" min="1" max="12" value="{{ birthday.month }}" required>
+            <input name="day" type="number" min="1" max="31" value="{{ birthday.day }}" required>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>

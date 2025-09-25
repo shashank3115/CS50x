@@ -1,0 +1,23 @@
+
+HTML Tags Used:
+1. html
+2. head
+3. body
+4. h1
+5. h2
+6. p
+7. a
+8. div
+9. button
+10. input
+
+CSS Properties Used:
+1. font-family
+2. background
+3. color
+4. margin
+5. padding
+
+JavaScript: Used to add interactivity to buttons and input fields, such as changing colors and displaying feedback when a user interacts with the page.
+
+Bootstrap: Used for responsive layout and components like navbar, buttons, and container to enhance the design and mobile-friendliness.

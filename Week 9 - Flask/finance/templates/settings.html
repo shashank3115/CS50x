@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <h2>Account Settings</h2>
+    <form action="/settings" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="username" placeholder="New Username" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Update Username</button>
+    </form>
+{% endblock %}

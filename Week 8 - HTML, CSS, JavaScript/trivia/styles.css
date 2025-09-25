@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* Multiple Choice Buttons */
+button.mcq {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+button.mcq:hover {
+    background-color: #e8f5e9;
+}
+
+/* Free Response Input */
+#free-answer {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#free-submit {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#free-submit:hover {
+    background-color: #45a049;
+}
+
+/* Result Text */
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}

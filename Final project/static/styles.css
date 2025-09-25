@@ -1,0 +1,114 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Form styling */
+.form-group label {
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Results section */
+#results h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Scrollable list */
+.scrollable-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Details styling */
+details summary {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+details[open] summary::after {
+    content: "▲";
+    float: right;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+details summary::after {
+    content: "▼";
+    float: right;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Download buttons */
+.download-btn {
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* WordCloud canvas */
+#wordCloudCanvas {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Loading text */
+#loading p {
+    font-size: 16px;
+    font-weight: 500;
+}
